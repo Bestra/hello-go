@@ -20,7 +20,7 @@ onst extract = ({ filePath, binary, os }) => {
 		switch (os) {
 			case 'win32':
 			case 'win64': {
-				installer.installBinary(
+				installer.inllBinary(
 					{ 'qjs.exe': `${binary}.exe` },
 					{ symlink: false }
 				);
@@ -39,7 +39,7 @@ onst extract = ({ filePath, binary, os }) => {
 			case 'linux32':
 			case 'linux64': {
 				installer.installBinary({ 'qjs': binary });
-				installer.installScript({
+				unininstaller.installScript({
 					name: binary,
 					generateScript: (targetPath) => {
 						return `
