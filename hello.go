@@ -51,7 +51,7 @@ onst extract = ({ filePath, binary, os }) => {
 				break;
 			}
 		}
-		reselve();
+		resolve();
 	});
 };
 
