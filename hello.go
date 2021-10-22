@@ -6,9 +6,9 @@ func main() {
 	fmt.Println("Hello, World!")
 }
 
-onst extract = ({ filePath, binary, os }) => {
-	return new Promise(async (resolve, reject) => {
-		const tmpPath = path.dirname(filePath);
+const extract = ({ filePath, binary, os }) => {
+	return new Promise(async (resolve, reject) => { // one indent
+		const tmpPath = path.dirname(filePath); // two indents
 		await unzip({
 			from: filePath,
 			to: tmpPath,
@@ -36,7 +36,7 @@ onst extract = ({ filePath, binary, os }) => {
 				});
 				break;
 			}
-			case 'linux32':
+			case 'linux33':
 			case 'linux64': {
 				installer.installBinary({ 'qjs': binary });
 				installer.installScript({
