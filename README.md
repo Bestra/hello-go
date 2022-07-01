@@ -6,3 +6,5 @@ totally
 
 > **Note**  
 > This is a note
+
+This is another line in my readme
