@@ -2,4 +2,4 @@
 Doing the go tutorials at https://golang.org/doc/tutorial/getting-started
 yeppers
 
-yeehaw
+yeehaw dude
